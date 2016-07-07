@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="POLOLU-4988">
+<wire x1="0" y1="20.32" x2="15.24" y2="20.32" width="0.127" layer="51"/>
+<wire x1="15.24" y1="20.32" x2="15.24" y2="0" width="0.127" layer="51"/>
+<wire x1="15.24" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="0" y2="20.32" width="0.127" layer="51"/>
+<pad name="ENABLE" x="1.27" y="19.05" drill="0.8"/>
+<pad name="MS1" x="1.27" y="16.51" drill="0.8"/>
+<pad name="MS2" x="1.27" y="13.97" drill="0.8"/>
+<pad name="MS3" x="1.27" y="11.43" drill="0.8"/>
+<pad name="RESET" x="1.27" y="8.89" drill="0.8"/>
+<pad name="SLEEP" x="1.27" y="6.35" drill="0.8"/>
+<pad name="STEP" x="1.27" y="3.81" drill="0.8"/>
+<pad name="DIR" x="1.27" y="1.27" drill="0.8"/>
+<pad name="GND" x="13.97" y="1.27" drill="0.8"/>
+<pad name="VDD" x="13.97" y="3.81" drill="0.8"/>
+<pad name="1B" x="13.97" y="6.35" drill="0.8"/>
+<pad name="1A" x="13.97" y="8.89" drill="0.8"/>
+<pad name="2A" x="13.97" y="11.43" drill="0.8"/>
+<pad name="2B" x="13.97" y="13.97" drill="0.8"/>
+<pad name="GNDMOT" x="13.97" y="16.51" drill="0.8"/>
+<pad name="VMOT" x="13.97" y="19.05" drill="0.8"/>
+<wire x1="0" y1="0" x2="0" y2="20.32" width="0.127" layer="21"/>
+<wire x1="0" y1="20.32" x2="15.24" y2="20.32" width="0.127" layer="21"/>
+<wire x1="15.24" y1="20.32" x2="15.24" y2="0" width="0.127" layer="21"/>
+<wire x1="15.24" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<text x="0" y="20.955" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<text x="2.54" y="19.05" size="0.8128" layer="21">ENABLE</text>
+<text x="2.54" y="16.51" size="0.8128" layer="21">MS1</text>
+<text x="2.54" y="13.97" size="0.8128" layer="21">MS2</text>
+<text x="2.54" y="11.43" size="0.8128" layer="21">MS3</text>
+<text x="2.54" y="8.89" size="0.8128" layer="21">RESET</text>
+<text x="2.54" y="6.35" size="0.8128" layer="21">SLEEP</text>
+<text x="2.54" y="3.81" size="0.8128" layer="21">STEP</text>
+<text x="2.54" y="1.27" size="0.8128" layer="21">DIR</text>
+<text x="9.525" y="19.05" size="0.8128" layer="21">VMOT</text>
+<text x="7.62" y="16.51" size="0.8128" layer="21">GNDMOT</text>
+<text x="11.43" y="13.97" size="0.8128" layer="21">2B</text>
+<text x="11.43" y="11.43" size="0.8128" layer="21">2A</text>
+<text x="11.43" y="8.89" size="0.8128" layer="21">1A</text>
+<text x="11.43" y="6.35" size="0.8128" layer="21">1B</text>
+<text x="10.16" y="3.81" size="0.8128" layer="21">VDD</text>
+<text x="10.16" y="1.27" size="0.8128" layer="21">GND</text>
+</package>
+<package name="POLOLU-MAX14870">
+<pad name="GND" x="1.27" y="1.27" drill="0.8"/>
+<pad name="EN" x="1.27" y="3.81" drill="0.8"/>
+<pad name="FAULT" x="1.27" y="6.35" drill="0.8"/>
+<pad name="DIR" x="1.27" y="8.89" drill="0.8"/>
+<pad name="PWM" x="1.27" y="11.43" drill="0.8"/>
+<pad name="GNDMOT" x="13.97" y="1.27" drill="0.8"/>
+<pad name="VMOT" x="13.97" y="3.81" drill="0.8"/>
+<pad name="M2" x="13.97" y="6.35" drill="0.8"/>
+<pad name="M1" x="13.97" y="8.89" drill="0.8"/>
+<pad name="VM" x="13.97" y="11.43" drill="0.8"/>
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.127" layer="51"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="12.7" width="0.127" layer="51"/>
+<wire x1="15.24" y1="12.7" x2="0" y2="12.7" width="0.127" layer="51"/>
+<wire x1="0" y1="12.7" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.127" layer="21"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="12.7" width="0.127" layer="21"/>
+<text x="0" y="13.335" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<text x="2.54" y="11.43" size="0.8128" layer="21">PWM</text>
+<text x="2.54" y="8.89" size="0.8128" layer="21">DIR</text>
+<text x="2.54" y="6.35" size="0.8128" layer="21">FAULT</text>
+<text x="2.54" y="3.81" size="0.8128" layer="21">EN</text>
+<text x="2.54" y="1.27" size="0.8128" layer="21">GND</text>
+<text x="11.43" y="11.43" size="0.8128" layer="21">VM</text>
+<text x="11.43" y="8.89" size="0.8128" layer="21">M1</text>
+<text x="11.43" y="6.35" size="0.8128" layer="21">M2</text>
+<text x="9.525" y="3.81" size="0.8128" layer="21">VMOT</text>
+<text x="8.255" y="1.27" size="0.8128" layer="21">GNDMOT</text>
+</package>
+<package name="ADAFRUIT-8CH-LVLSHIFTER">
+<pad name="OE" x="1.27" y="1.27" drill="0.8"/>
+<pad name="A8" x="1.27" y="3.81" drill="0.8"/>
+<pad name="A7" x="1.27" y="6.35" drill="0.8"/>
+<pad name="A6" x="1.27" y="8.89" drill="0.8"/>
+<pad name="A5" x="1.27" y="11.43" drill="0.8"/>
+<pad name="A4" x="1.27" y="13.97" drill="0.8"/>
+<pad name="A3" x="1.27" y="16.51" drill="0.8"/>
+<pad name="A2" x="1.27" y="19.05" drill="0.8"/>
+<pad name="A1" x="1.27" y="21.59" drill="0.8"/>
+<pad name="VCCA" x="1.27" y="24.13" drill="0.8"/>
+<pad name="GND" x="13.97" y="1.27" drill="0.8"/>
+<pad name="B8" x="13.97" y="3.81" drill="0.8"/>
+<pad name="B7" x="13.97" y="6.35" drill="0.8"/>
+<pad name="B6" x="13.97" y="8.89" drill="0.8"/>
+<pad name="B5" x="13.97" y="11.43" drill="0.8"/>
+<pad name="B4" x="13.97" y="13.97" drill="0.8"/>
+<pad name="B3" x="13.97" y="16.51" drill="0.8"/>
+<pad name="B2" x="13.97" y="19.05" drill="0.8"/>
+<pad name="B1" x="13.97" y="21.59" drill="0.8"/>
+<pad name="VCCB" x="13.97" y="24.13" drill="0.8"/>
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.127" layer="51"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="25.4" width="0.127" layer="51"/>
+<wire x1="15.24" y1="25.4" x2="0" y2="25.4" width="0.127" layer="51"/>
+<wire x1="0" y1="25.4" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.127" layer="21"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="25.4" width="0.127" layer="21"/>
+<wire x1="15.24" y1="25.4" x2="0" y2="25.4" width="0.127" layer="21"/>
+<wire x1="0" y1="25.4" x2="0" y2="0" width="0.127" layer="21"/>
+<text x="0" y="26.035" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<text x="2.54" y="24.13" size="0.8128" layer="21">VCCA</text>
+<text x="2.54" y="21.59" size="0.8128" layer="21">A1</text>
+<text x="2.54" y="19.05" size="0.8128" layer="21">A2</text>
+<text x="2.54" y="16.51" size="0.8128" layer="21">A3</text>
+<text x="2.54" y="13.97" size="0.8128" layer="21">A4</text>
+<text x="2.54" y="11.43" size="0.8128" layer="21">A5</text>
+<text x="2.54" y="8.89" size="0.8128" layer="21">A6</text>
+<text x="2.54" y="6.35" size="0.8128" layer="21">A7</text>
+<text x="2.54" y="3.81" size="0.8128" layer="21">A8</text>
+<text x="2.54" y="1.27" size="0.8128" layer="21">OE</text>
+<text x="9.525" y="24.13" size="0.8128" layer="21">VCCB</text>
+<text x="11.43" y="21.59" size="0.8128" layer="21">B1</text>
+<text x="11.43" y="19.05" size="0.8128" layer="21">B2</text>
+<text x="11.43" y="16.51" size="0.8128" layer="21">B3</text>
+<text x="11.43" y="13.97" size="0.8128" layer="21">B4</text>
+<text x="11.43" y="11.43" size="0.8128" layer="21">B5</text>
+<text x="11.43" y="8.89" size="0.8128" layer="21">B6</text>
+<text x="11.43" y="6.35" size="0.8128" layer="21">B7</text>
+<text x="11.43" y="3.81" size="0.8128" layer="21">B8</text>
+<text x="10.16" y="1.27" size="0.8128" layer="21">GND</text>
+</package>
+<package name="ADAFRUIT-DS3231">
+<pad name="VIN" x="2.54" y="1.27" drill="0.8"/>
+<pad name="GND" x="5.08" y="1.27" drill="0.8"/>
+<pad name="SCL" x="7.62" y="1.27" drill="0.8"/>
+<pad name="SDA" x="10.16" y="1.27" drill="0.8"/>
+<pad name="BAT" x="12.7" y="1.27" drill="0.8"/>
+<pad name="32K" x="15.24" y="1.27" drill="0.8"/>
+<pad name="SQW" x="17.78" y="1.27" drill="0.8"/>
+<pad name="RST" x="20.32" y="1.27" drill="0.8"/>
+<wire x1="0" y1="0" x2="22.86" y2="0" width="0.127" layer="21"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="17.78" width="0.127" layer="21"/>
+<wire x1="22.86" y1="17.78" x2="0" y2="17.78" width="0.127" layer="21"/>
+<wire x1="0" y1="17.78" x2="0" y2="0" width="0.127" layer="21"/>
+<text x="2.54" y="2.54" size="0.8128" layer="21" rot="R90">VIN</text>
+<text x="5.08" y="2.54" size="0.8128" layer="21" rot="R90">GND</text>
+<text x="7.62" y="2.54" size="0.8128" layer="21" rot="R90">SCL</text>
+<text x="10.16" y="2.54" size="0.8128" layer="21" rot="R90">SDA</text>
+<text x="12.7" y="2.54" size="0.8128" layer="21" rot="R90">BAT</text>
+<text x="15.24" y="2.54" size="0.8128" layer="21" rot="R90">32K</text>
+<text x="17.78" y="2.54" size="0.8128" layer="21" rot="R90">SQW</text>
+<text x="20.32" y="2.54" size="0.8128" layer="21" rot="R90">RST</text>
+<wire x1="0" y1="0" x2="22.86" y2="0" width="0.127" layer="51"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="17.78" width="0.127" layer="51"/>
+<wire x1="22.86" y1="17.78" x2="0" y2="17.78" width="0.127" layer="51"/>
+<wire x1="0" y1="17.78" x2="0" y2="0" width="0.127" layer="51"/>
+<text x="0" y="18.415" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="POLOLU-4988">
+<description>Pololu 4988 stepper motor driver breakout footprint</description>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="22.86" x2="0" y2="22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="ENABLE" x="-5.08" y="20.32" length="middle"/>
+<pin name="MS1" x="-5.08" y="17.78" length="middle"/>
+<pin name="MS2" x="-5.08" y="15.24" length="middle"/>
+<pin name="MS3" x="-5.08" y="12.7" length="middle"/>
+<pin name="RESET" x="-5.08" y="10.16" length="middle"/>
+<pin name="SLEEP" x="-5.08" y="7.62" length="middle"/>
+<pin name="STEP" x="-5.08" y="5.08" length="middle"/>
+<pin name="DIR" x="-5.08" y="2.54" length="middle"/>
+<pin name="VMOT" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="GNDMOT" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="2B" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="2A" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="1A" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="1B" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="VDD" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="GND" x="25.4" y="2.54" length="middle" rot="R180"/>
+<text x="0.254" y="23.368" size="1.778" layer="94">&gt;NAME</text>
+<text x="0" y="-2.286" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="POLOLU-MAX14870">
+<wire x1="5.08" y1="0" x2="25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="25.4" y1="0" x2="25.4" y2="15.24" width="0.254" layer="94"/>
+<wire x1="25.4" y1="15.24" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="0" width="0.254" layer="94"/>
+<pin name="PWM" x="0" y="12.7" length="middle"/>
+<pin name="DIR" x="0" y="10.16" length="middle"/>
+<pin name="FAULT" x="0" y="7.62" length="middle"/>
+<pin name="EN" x="0" y="5.08" length="middle"/>
+<pin name="GND" x="0" y="2.54" length="middle"/>
+<pin name="VM" x="30.48" y="12.7" length="middle" rot="R180"/>
+<pin name="M1" x="30.48" y="10.16" length="middle" rot="R180"/>
+<pin name="M2" x="30.48" y="7.62" length="middle" rot="R180"/>
+<pin name="VMOT" x="30.48" y="5.08" length="middle" rot="R180"/>
+<pin name="GNDMOT" x="30.48" y="2.54" length="middle" rot="R180"/>
+<text x="5.08" y="15.748" size="1.778" layer="94">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="ADAFRUIT-8CH-LVLSHIFTER">
+<wire x1="0" y1="-2.54" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-2.54" x2="17.78" y2="25.4" width="0.254" layer="94"/>
+<wire x1="17.78" y1="25.4" x2="0" y2="25.4" width="0.254" layer="94"/>
+<wire x1="0" y1="25.4" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<pin name="VCCA" x="-5.08" y="22.86" length="middle"/>
+<pin name="A1" x="-5.08" y="20.32" length="middle"/>
+<pin name="A2" x="-5.08" y="17.78" length="middle"/>
+<pin name="A3" x="-5.08" y="15.24" length="middle"/>
+<pin name="A4" x="-5.08" y="12.7" length="middle"/>
+<pin name="A5" x="-5.08" y="10.16" length="middle"/>
+<pin name="A6" x="-5.08" y="7.62" length="middle"/>
+<pin name="A7" x="-5.08" y="5.08" length="middle"/>
+<pin name="A8" x="-5.08" y="2.54" length="middle"/>
+<pin name="OE" x="-5.08" y="0" length="middle"/>
+<pin name="VCCB" x="22.86" y="22.86" length="middle" rot="R180"/>
+<pin name="B1" x="22.86" y="20.32" length="middle" rot="R180"/>
+<pin name="B2" x="22.86" y="17.78" length="middle" rot="R180"/>
+<pin name="B3" x="22.86" y="15.24" length="middle" rot="R180"/>
+<pin name="B4" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="B5" x="22.86" y="10.16" length="middle" rot="R180"/>
+<pin name="B6" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="B7" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="B8" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="GND" x="22.86" y="0" length="middle" rot="R180"/>
+<text x="0.254" y="26.162" size="1.778" layer="94">&gt;NAME</text>
+<text x="0" y="-5.08" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="ADAFRUIT-DS3231">
+<wire x1="0" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="22.86" x2="0" y2="22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VIN" x="-5.08" y="20.32" length="middle"/>
+<pin name="GND" x="-5.08" y="17.78" length="middle"/>
+<pin name="SCL" x="-5.08" y="15.24" length="middle"/>
+<pin name="SDA" x="-5.08" y="12.7" length="middle"/>
+<pin name="BAT" x="-5.08" y="10.16" length="middle"/>
+<pin name="32K" x="-5.08" y="7.62" length="middle"/>
+<pin name="SQW" x="-5.08" y="5.08" length="middle"/>
+<pin name="RST" x="-5.08" y="2.54" length="middle"/>
+<text x="0" y="23.368" size="1.778" layer="94">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="POLOLU-4988">
+<description>Pololu 4988 stepper motor driver footprint</description>
+<gates>
+<gate name="G$1" symbol="POLOLU-4988" x="-10.16" y="-12.7"/>
+</gates>
+<devices>
+<device name="" package="POLOLU-4988">
+<connects>
+<connect gate="G$1" pin="1A" pad="1A"/>
+<connect gate="G$1" pin="1B" pad="1B"/>
+<connect gate="G$1" pin="2A" pad="2A"/>
+<connect gate="G$1" pin="2B" pad="2B"/>
+<connect gate="G$1" pin="DIR" pad="DIR"/>
+<connect gate="G$1" pin="ENABLE" pad="ENABLE"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GNDMOT" pad="GNDMOT"/>
+<connect gate="G$1" pin="MS1" pad="MS1"/>
+<connect gate="G$1" pin="MS2" pad="MS2"/>
+<connect gate="G$1" pin="MS3" pad="MS3"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="SLEEP" pad="SLEEP"/>
+<connect gate="G$1" pin="STEP" pad="STEP"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+<connect gate="G$1" pin="VMOT" pad="VMOT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POLOLU-MAX14870">
+<gates>
+<gate name="G$1" symbol="POLOLU-MAX14870" x="-15.24" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="POLOLU-MAX14870">
+<connects>
+<connect gate="G$1" pin="DIR" pad="DIR"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="FAULT" pad="FAULT"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GNDMOT" pad="GNDMOT"/>
+<connect gate="G$1" pin="M1" pad="M1"/>
+<connect gate="G$1" pin="M2" pad="M2"/>
+<connect gate="G$1" pin="PWM" pad="PWM"/>
+<connect gate="G$1" pin="VM" pad="VM"/>
+<connect gate="G$1" pin="VMOT" pad="VMOT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADAFRUIT-8CH-LVLSHIFTER">
+<gates>
+<gate name="G$1" symbol="ADAFRUIT-8CH-LVLSHIFTER" x="-8.89" y="-11.176"/>
+</gates>
+<devices>
+<device name="" package="ADAFRUIT-8CH-LVLSHIFTER">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="A3" pad="A3"/>
+<connect gate="G$1" pin="A4" pad="A4"/>
+<connect gate="G$1" pin="A5" pad="A5"/>
+<connect gate="G$1" pin="A6" pad="A6"/>
+<connect gate="G$1" pin="A7" pad="A7"/>
+<connect gate="G$1" pin="A8" pad="A8"/>
+<connect gate="G$1" pin="B1" pad="B1"/>
+<connect gate="G$1" pin="B2" pad="B2"/>
+<connect gate="G$1" pin="B3" pad="B3"/>
+<connect gate="G$1" pin="B4" pad="B4"/>
+<connect gate="G$1" pin="B5" pad="B5"/>
+<connect gate="G$1" pin="B6" pad="B6"/>
+<connect gate="G$1" pin="B7" pad="B7"/>
+<connect gate="G$1" pin="B8" pad="B8"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="OE" pad="OE"/>
+<connect gate="G$1" pin="VCCA" pad="VCCA"/>
+<connect gate="G$1" pin="VCCB" pad="VCCB"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADAFRUIT-DS3231">
+<gates>
+<gate name="G$1" symbol="ADAFRUIT-DS3231" x="-7.62" y="-12.7"/>
+</gates>
+<devices>
+<device name="" package="ADAFRUIT-DS3231">
+<connects>
+<connect gate="G$1" pin="32K" pad="32K"/>
+<connect gate="G$1" pin="BAT" pad="BAT"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="SQW" pad="SQW"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
